@@ -23,7 +23,7 @@ class SignInWidget extends BaseWidget {
 
 class _SignInWidgetState extends BaseWidgetState {
   final _textControllerUsername = TextEditingController(
-          text: "harden"), // TextEditingController(text: "scott01"),
+          text: "john"), // TextEditingController(text: "scott01"),
       _textControllerPassword = TextEditingController(
           text: "qwe123"), //TextEditingController(text: "123456"),
       _textControllePhone = TextEditingController(),
