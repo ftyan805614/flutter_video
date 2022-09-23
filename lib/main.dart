@@ -6,12 +6,15 @@ import 'package:polynesia/application/services/index.dart';
 import 'package:polynesia/application/theme/index.dart';
 import 'package:provider/provider.dart';
 
+import 'application/data/cache/hi_cache.dart';
+
 void main() async {
   /// 依赖注入
   setupServiceDependency();
 
   // Be sure to add this line if `PackageInfo.fromPlatform()` is called before runApp()
   WidgetsFlutterBinding.ensureInitialized();
+  await HiCache.preInit();
 
   runApp(const MainApp());
 }
